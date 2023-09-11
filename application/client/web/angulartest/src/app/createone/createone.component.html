@@ -1,0 +1,18 @@
+<h2 class="screen-align">Createone</h2>
+<div id="template-iy1y" class="gjs-row">
+    <div id="template-im0o" class="gjs-cell">
+        <label id="template-iuxx" class="label ">Name</label>
+        <input id="template-ilml" [(ngModel)]="onedata.name" [ngModelOptions]="{standalone: true}"
+        ngDefaultControl class="input form-control " />
+        <div id="template-iimjq" (click)="GpCreate()" class="button btn btn-primary ">Send</div>
+    </div>
+    <div id="template-i99j" class="gjs-cell">
+        <label id="template-iuvb" class="label ">entitydata</label>
+        <div id="template-i2mp" class="">
+            <ng-select id="template-iqu4s" name="dynamicdropdown_template-iqu4s" [searchable]="true"
+            [virtualScroll]="true" [items]="twodataitemArray" bindLabel="name" bindValue="name"
+            [(ngModel)]="onedata.entitybind" [ngModelOptions]="{standalone: true}"
+            ngDefaultControl (click)="twodataGpGetAllValues()" class="form-control "></ng-select>
+        </div>
+    </div>
+</div>
